@@ -6,7 +6,7 @@
 define([
     'jquery',
     'mageUtils',
-    '../shipping-rates-validation-rules/express',
+    '../shipping-rates-validation-rules/free',
     'mage/translate'
 ], function ($, utils, validationRules, $t) {
     'use strict';

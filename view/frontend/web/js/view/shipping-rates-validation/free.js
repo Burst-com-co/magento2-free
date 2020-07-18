@@ -7,19 +7,19 @@ define([
     'uiComponent',
     'Magento_Checkout/js/model/shipping-rates-validator',
     'Magento_Checkout/js/model/shipping-rates-validation-rules',
-    '../../model/shipping-rates-validator/express',
-    '../../model/shipping-rates-validation-rules/express'
+    '../../model/shipping-rates-validator/free',
+    '../../model/shipping-rates-validation-rules/free'
 ], function (
     Component,
     defaultShippingRatesValidator,
     defaultShippingRatesValidationRules,
-    expressShippingRatesValidator,
-    expressShippingRatesValidationRules
+    freeShippingRatesValidator,
+    freeShippingRatesValidationRules
 ) {
     'use strict';
 
-    defaultShippingRatesValidator.registerValidator('express', expressShippingRatesValidator);
-    defaultShippingRatesValidationRules.registerRules('express', expressShippingRatesValidationRules);
+    defaultShippingRatesValidator.registerValidator('free', freeShippingRatesValidator);
+    defaultShippingRatesValidationRules.registerRules('free', freeShippingRatesValidationRules);
 
     return Component;
 });
